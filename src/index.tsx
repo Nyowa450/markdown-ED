@@ -9,13 +9,11 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
+import { History } from './pages/history';
 
 const GlobalStyle = createGlobalStyle`
     body * {
-      box-sizing: border-box;
-    }
 `;
-
 const Main = (
   <>
     <GlobalStyle />
@@ -24,7 +22,7 @@ const Main = (
         <Editor />
       </Route>
       <Route exact path="/history">
-        <h1>History</h1>
+        <History />
       </Route>
       <Redirect to="/editor" path="*" />
     </Router>
