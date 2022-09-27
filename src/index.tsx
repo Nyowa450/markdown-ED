@@ -14,6 +14,7 @@ import { History } from './pages/history';
 const GlobalStyle = createGlobalStyle`
     body * {
 `;
+
 const Main = (
   <>
     <GlobalStyle />
